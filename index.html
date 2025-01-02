@@ -1,206 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Madhan Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhan Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-      
-      body{
-        background-color: black;
-      }
-      header {
-        background-image: url("wall1.jpg");
-      
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        width: 100%; 
-        height: 700px; 
-      }
 
-      .container-fluid {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+  
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><span>M</span>adhan.</div>
+    <ul class="navlist">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skill">Skills</a>
+      <a href="#project">Projects</a>
+      <a href="#service">Services</a>
+      <a href="#contact">Contact Me</a>
 
-      .content {
-        flex: 1;
-        padding: 20px;
-      }
-      
-      
-      .navbar a {
-        font-size: 20px;
-        color: whitesmoke;
-        text-decoration: none;
-        margin-left: 35px;
-        transition: 0.3s;
-      }
-      .navbar a:hover,
-      .navbar a.active {
-        color: greenyellow;
-        border-radius: 100%;
-      }
-
-      
-    </style>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <div class="container-fluid">
-        <div class="content">
-          <h1 style="color: white">Portfolio.</h1>
+    </ul>
+    <div id="menu-icon" class="bx bx-menu"></div>
+  </header>
+  
+  <!-- home section -->
+   <section id="home" class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-6" id="img1">
         </div>
-        <nav class="navbar">
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <h1 style="color: white; padding-top: 100px; padding-left: 100px;">
-        Hello I am Madhan M
-      </h1>
-      <h1 style="color: white;padding-left: 100px;">
-        And I'm a Frontend Developer and Backend Developer
-      </h1>
-      
-    </header>
+        <div class="col-lg-4 col-sm-12">
+          <div class="home-content">
+            <h1>Hi! I'm Madhan M</h1>
+            <div class="change-text">
+              <h3>And I'm</h3>
+              <h3>
+                <span class="word">Full Stack Developer</span>
+                <span class="word">Mern Developer</span>
+              </h3>
+            </div>
+            <p>
+              A Quick learner with excellent problem-solving skills, passionate about exploring and mastering new technologies. With strong expertise in web development, Java, and React, he consistently works towards creating innovative and practical solutions.
+            </p>
+            <div class="btn-box">
+              <a href="#" class="btn btn-danger">Download Resume</a>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+              <a href="#"><i class='bx bxl-github'></i></a>
 
-    
 
-    <!-- About Section -->
-    
-    <div id="about" class="container mt-5">
-      <h1 style="text-align: center; padding-top: 10px; color: white;" >About Me</h1>
-      <div class="card" >
-        <div class="card-body">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Text Content -->
-              <div class="col-lg-8 col-sm-12">
-                <h2 style="color: lightgreen;">Who Am I?</h2>
-                <b>
-                <p style="text-align: justify;">
-                  Highly motivated Computer Science and Business Systems student with a passion for crafting intuitive user interfaces and a strong foundation in design and technology. 
-                  Proven ability to develop innovative solutions, such as an Arduino-based air pollution monitoring system and a secure user authentication system using the MERN stack.
-                </p>
-                <p style="text-align: justify;">
-                  Recognized for technical skills and project contributions, including awards in coding competitions and certifications in cloud computing and business English. Seeking opportunities to leverage my skills and contribute to impactful projects in a collaborative and dynamic environment.
-                </p>
-              </b>
-              </div>
-    
-              <!-- Carousel Section -->
-              <div class="col-lg-4 col-sm-12">
-                <div id="aboutCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="pro.jpg" alt="Profile Image" class="d-block w-100 rounded" style="max-height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="pro2.jpg" class="d-block w-100 rounded" alt="Project Image 1" style="max-height: 380px; object-fit: cover;">
-                    </div>
-                    
-                  </div>
-                  <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-              
             </div>
           </div>
         </div>
+
       </div>
     </div>
+   </section>
 
-    <div id="education" class="container mt-5">
-      <h1 style="text-align: center; padding-top: 10px; color: white;" >Education Qualifications</h1>
-    </div>
-    
-    
-    
-    
+  
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <div id="skills" class="container mt-5">
-      <h1>Hello world</h1>
-    </div>
-    <div id="projects" class="container mt-5">
-      <h1>Hello world</h1>
-    </div>
-    <div id="contact" class="container mt-5">
-      <h1>Hello world</h1>
-    </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- JavaScript to show/hide the About section when the tab is clicked -->
-    <script>
-      // Smooth scrolling to sections
-      document.querySelectorAll('.nav-link').forEach((link) => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault(); // Prevent default link behavior
-    
-          // Get the target section ID from the href attribute
-          const targetId = this.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
-    
-          if (targetSection) {
-            // Scroll to the target section smoothly
-            targetSection.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-          }
-        });
-      });
-    </script>
-    
-  </body>
+  
+</body>
 </html>
