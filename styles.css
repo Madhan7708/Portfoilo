@@ -98,6 +98,10 @@ header{
     animation: moveUpDown 3s infinite ease-in-out;
 }
 
+#img1 img:hover {
+    animation-play-state: paused;
+}
+
 
 .home-content > h1{
     color: white;
@@ -124,6 +128,8 @@ a i {
     height: 50px; 
     padding: 25px;
 }
+
+
 
 .social-icons > a {
     text-decoration: none; /* Remove underline from links */
@@ -175,6 +181,9 @@ a i {
         display: block;
         margin-left: 10px;
         margin-right: auto;
+    }
+    #img1 img:hover {
+        animation-play-state: paused;
     }
 
     .social-icons {
