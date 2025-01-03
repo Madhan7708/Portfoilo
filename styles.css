@@ -67,9 +67,9 @@ header{
 }
 
 .navlist a:hover{
-    color: red;
+    color: yellow;
     text-shadow: 0 0 10px rgba(208, 16, 225, 0.6),
-    0 0 20px rgba(208, 16, 225, 0.6),
+    0 0 20px rgba(233, 29, 43, 0.6),
     0 0 30px rgba(208, 16, 225, 0.6),
     0 0 40px rgba(208, 16, 225, 0.6),
     0 0 70px rgba(208, 16, 225, 0.6),
@@ -119,7 +119,7 @@ header{
     vertical-align: top;
 }
 .auto-type{
-    color: red;
+    color: yellow;
 }
 a i {
     font-size: 40px;
@@ -136,7 +136,7 @@ a i {
     margin-right: 10px; /* Add space between icons */
 }
 .social-icons a :hover{
-    color: red;
+    color: yellow;
 }
 .home-content>p{
     text-align: justify;
