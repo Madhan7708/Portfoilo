@@ -48,15 +48,20 @@ header{
     letter-spacing: 1px;
     color: white;
 }
+.logo span{
+    background-color: red;
+    border-radius: 90%;
+}
 
 .navlist{
     display: flex;
 }
 
 .navlist a{
-    color: white;
-    font-weight: 500;
     font-size: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif; /* Ensures bold family */
+    font-weight: 600;
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -109,16 +114,9 @@ header{
     margin: 0px;
     vertical-align: top;
 }
-.change-text h3 .word{
-    position:absolute;
-    display:flex;
-    opacity: 0;
+.auto-type{
+    color: red;
 }
-
-
-
-
-
 a i {
     font-size: 40px;
     color: white; 
@@ -131,6 +129,9 @@ a i {
     text-decoration: none; /* Remove underline from links */
     margin-right: 10px; /* Add space between icons */
 }
+.social-icons a :hover{
+    color: red;
+}
 .home-content>p{
     text-align: justify;
     color: white;
@@ -139,7 +140,7 @@ a i {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 650px) {
     header {
         flex-direction: column;
         padding: 20px;
@@ -147,6 +148,7 @@ a i {
 
     .logo {
         font-size: 24px;
+        text-align: center;
     }
 
     .navlist {
@@ -165,12 +167,13 @@ a i {
 
     .home-content > h1 {
         font-size: 30px;
+        text-align: center;
     }
 
     img {
         width: 525px;
         display: block;
-        margin-left: auto;
+        margin-left: 10px;
         margin-right: auto;
     }
 

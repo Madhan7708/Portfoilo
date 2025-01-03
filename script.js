@@ -28,3 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     generateParticles(); // Generate particles on page load
 });
+
